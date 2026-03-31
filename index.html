@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rock Paper Scissors PRO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>🎮 Rock Paper Scissors Game</h1>
+
+    <div class="container">
+        <button class="rock" onclick="play('rock')">🪨 Rock</button>
+        <button class="paper" onclick="play('paper')">📄 Paper</button>
+        <button class="scissor" onclick="play('scissor')">✂️ Scissor</button>
+    </div>
+
+    <button class="reset" onclick="resetGame()">🔄 Reset Game</button>
+
+    <div id="result"></div>
+    <div id="score">You: 0 | Computer: 0</div>
+
+    <!-- Sounds -->
+    <audio id="winSound" src="win.mp3"></audio>
+<audio id="loseSound" src="lose.mp3"></audio>
+<audio id="tieSound" src="tie.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>

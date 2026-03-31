@@ -1,0 +1,50 @@
+body {
+    font-family: Arial;
+    text-align: center;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+.container {
+    margin-top: 40px;
+}
+
+button {
+    padding: 15px 25px;
+    margin: 10px;
+    font-size: 18px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.15);
+}
+
+.rock { background: #ff6b6b; }
+.paper { background: #1dd1a1; }
+.scissor { background: #54a0ff; }
+.reset { background: #feca57; color: black; }
+
+#result {
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: bold;
+    animation: fade 0.5s ease-in-out;
+}
+
+@keyframes fade {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+#score {
+    margin-top: 20px;
+    font-size: 20px;
+}
